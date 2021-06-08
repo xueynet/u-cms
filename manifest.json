@@ -78,7 +78,7 @@
         "enable" : false
     },
     "h5" : {
-        "title" : "图鸟科技",
+        "title" : "雪印网络",
         "router" : {
             "mode" : "history"
         }

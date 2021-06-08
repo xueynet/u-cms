@@ -7,13 +7,12 @@
         </view>
       </block>
     </tn-custom>
-    <scroll-view v-if="showNavScroll" scroll-x class="bg-white nav shadow fixed" scroll-with-animation :scroll-left="scrollLeft" :style="'padding-top:' + (CustomBar + 15) + 'px;'">
-      <view :class="['cu-item text-lg', index == TabCur ? ' text-black cur text-bold text-xl' : '']" v-for="(item, index) in caseNav"
-        :key="index" @click='navSelect(item.id, index)'>
-        {{item.title}}
-      </view>
-    </scroll-view>
-
+	<scroll-view v-if="showNavScroll" scroll-x class="bg-white nav shadow fixed" scroll-with-animation :scroll-left="scrollLeft" :style="'padding-top:' + (CustomBar + 15) + 'px;'">
+	  <view :class="['cu-item text-lg', index == TabCur ? ' text-black cur text-bold text-xl' : '']" v-for="(item, index) in caseNav"
+	    :key="index" @click='navSelect(item.id, index)'>
+	    {{item.title}}
+	  </view>
+	</scroll-view>
     <view class="cu-card article no-card padding-top-sm" :style="'padding-top:' + CustomBar + 'px;padding-bottom:' + CustomBar + 'px;'"
       v-if="isLoadAll && categoryData.length == 0">
       <view class="cu-item">
@@ -62,7 +61,7 @@
       return {
         CustomBar: this.CustomBar,
         TabCur: 0,
-        caseNav: ['全部', '小程序', '网站', 'APP', 'UI设计'],
+        caseNav: ['全部', '小程序', '网站', 'APP'],
         showNavScroll: true,
         scrollLeft: 0,
         categoryData: [], // 案例栏目数据

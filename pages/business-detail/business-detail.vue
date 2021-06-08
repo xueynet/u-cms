@@ -29,21 +29,12 @@
       </block>
     </view>
 
-
     <view class="cu-bar bg-white tabbar shop shadow edit-fixed">
-      <!-- <button class="action text-gray" open-type='contact'>
-            <view class='icon-command text-purple'>
-            </view>
-            反馈
-        </button> -->
       <button class="action text-gray text-shadow">
         <view class='cuIcon-community text-gray'>
         </view>
       </button>
       <view class="action text-gray text-shadow">
-        <!-- <view class='icon-friendfavor text-pink'>
-                <view class='cu-tag badge'>99</view>
-            </view> -->
         <text class="text-sm">{{businessData.query_count}}人已咨询</text>
       </view>
       <view class='bg-gradual-red submit margin-left-xl text-xl'>
@@ -55,9 +46,7 @@
         </button>
       </view>
     </view>
-
     <view class='cu-tabbar-height'></view>
-
     <tn-wx-login :show="showLogin" :tips="loginMsg" @closeLoginModal="closeLoginModal" @getUserInfo="getUserInfo"></tn-wx-login>
   </view>
 </template>
@@ -99,13 +88,13 @@
     },
     onShareAppMessage() {
       return {
-        title: '图鸟业务',
+        title: '雪印业务',
         imageUrl: '/static/images/share.jpg',
       }
     },
     onShareTimeline() {
       return {
-        title: '图鸟业务',
+        title: '雪印业务',
         imageUrl: '/static/images/share.jpg',
       }
     },

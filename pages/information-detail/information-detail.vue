@@ -4,7 +4,7 @@
       <block slot="left">
         <view class='action' @click="goBack">
           <text :class="from === 'share' ? 'cuIcon-homefill' : 'cuIcon-back_android'" style="font-size:48rpx"></text>
-          <text class="">资讯 - {{informationData.category.title}}</text>
+          <text class="">新闻中心 - {{informationData.category.title}}</text>
         </view>
       </block>
     </tn-custom>

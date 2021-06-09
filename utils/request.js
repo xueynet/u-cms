@@ -90,7 +90,7 @@ function _processError(err) {
   } else {
     msg.push('未知错误');
   }
-  console.log(msg[0]);
+  // console.log(msg[0]);
 
   if (err && err.data && (err.data.errorCode == 30000 ||
     err.data.errorCode == 40012 ||

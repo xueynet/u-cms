@@ -33,7 +33,16 @@
     }, {
       "path": "pages/components/home",
       "style": {}
-    }],
+    },{
+            "path" : "pages/404/404",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
   "subPackages": [{
     "root": "tn_components",
     "pages": [{

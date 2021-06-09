@@ -36,7 +36,6 @@
     methods: {
       /**点赞 */
       likeClick() {
-
         const image = "/static/images/likeFx/" + this.getRandomInt(1, 33) + ".png";
         const anmationData = {
           id: new Date().getTime(),

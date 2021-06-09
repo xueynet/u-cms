@@ -102,7 +102,7 @@
         path: '/pages/case-detail/case-detail?from=share&id=' + this.case_id,
       };
     },
-    onShareTimeline() {
+    onShareTimeline(){
       this._updateShareData();
 
       return {

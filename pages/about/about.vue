@@ -13,11 +13,12 @@
     <canvas canvas-id="bubble" :style="'width:' + width + 'px;height:' + height + 'px'" class="like-fx"></canvas>
     <like-fx ref="likeFx" :width="width" :height="height"></like-fx>
 
-    <!-- <canvas canvas-id="bubble" :style="'width:' + 375 + 'px;height:' + 1920 + 'px'" class="like-fx"></canvas> -->
+    <canvas canvas-id="bubble" :style="'width:' + 375 + 'px;height:' + 1920 + 'px'" class="like-fx"></canvas>
 
     <view class="container about-bg" :style="'margin-top:-' + CustomBar + 'px;background-image:url(' + background_image + ')'">
-      <!-- <view class="detail-imgs">
+     <!-- <view class="detail-imgs">
             <block>
+			
                 <image src='{{background_image}}' mode='widthFix' class='tn-bg-cart'></image>
             </block>
         </view> -->
@@ -65,7 +66,7 @@
     },
     onShareTimeline() {
       return {
-        title: '关于图鸟',
+        title: '关于雪印',
         query: 'from=share'
       }
     },
@@ -97,7 +98,7 @@
       },
       _startLikeAnimation() {
         this.animation_timer = setInterval(() => {
-          this.$refs.likeFx.likeClick()
+          // this.$refs.likeFx.likeClick();
         }, 300)
       }
     }
@@ -185,3 +186,4 @@
     /* background-color: red; */
   }
 </style>
+

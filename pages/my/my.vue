@@ -1,6 +1,7 @@
 <template>
 	<view class="my">
-		<image :src="bgImage" mode='widthFix' class='tn-bg'></image>
+		<!-- <image :src="bgImage"  mode='widthFix' class='tn-bg'></image> -->
+		<image src="../../static/images/my-bg.jpg" mode='widthFix' class='tn-bg'></image>
 		<navigator target="miniProgram" app-id='wx7c69ce7f11709260' path='/pages/other/other?id=1' version='release'
 			hover-class="none">
 			<view class="dong">
@@ -51,7 +52,7 @@
 			</view>
 		</view>
 
-		<view class="margin flex">
+		<view class="margin flex" style="box-sizing: border-box;box-shadow: 0px 0px 38px 0px rgb(0 0 0 / 10%);">
 			<view class='bg-white flex-sub margin-right my-radius shadow-lg'>
 				<view class="cu-list grid col-1 no-border my-iconcolor my-radius cu-list-no">
 					<view class="cu-item my-icon">
@@ -65,10 +66,10 @@
 			<view class='bg-white flex-sub my-radius shadow-lg'>
 				<view class="cu-list grid col-1 no-border my-iconcolor my-radius cu-list-no">
 					<view class="cu-item my-icon" @click="navOfficial">
-						<!-- <navigator url="../../pages/official/official" delta="1" hover-class="none"> -->
-						<image src='/static/images/about.png' class='png' mode='aspectFit'></image>
-						<text class="text-xl text-my">雪印公众号</text>
-						<!-- </navigator> -->
+						<navigator url="../../pages/official/official" :delta="1" hover-class="none">
+							<image src='/static/images/about.png' class='png' mode='aspectFit'></image>
+							<text class="text-xl text-my">雪印公众号</text>
+						</navigator>
 					</view>
 				</view>
 			</view>
@@ -142,7 +143,7 @@
 			//拨打固定电话
 			callPhoneNumber() {
 				uni.makePhoneCall({
-					phoneNumber: "13699700470",
+					phoneNumber: "0755-83360966",
 				});
 			},
 			// 复制Github地址
@@ -152,13 +153,16 @@
 				})
 			},
 
-			// 关于图鸟
+			// 关于雪印
 			navAbout() {
 				uni.navigateTo({
 					url: '../about/about'
 				})
 			},
-
+			// 雪印公众号
+			navOfficial(){
+				console.log('雪印公众号');
+			},
 			// 加载数据
 			_loadData() {
 

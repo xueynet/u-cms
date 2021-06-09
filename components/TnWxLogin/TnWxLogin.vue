@@ -19,7 +19,6 @@
                 </view>
               </view>
             </view>
-
             <view class="margin-top">
               <view class="cu-bar btn-group">
                 <button class='cu-btn bg-grey shadow-blur round' @click="closeLoginModal">取 消</button>

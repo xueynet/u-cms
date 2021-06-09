@@ -95,7 +95,7 @@
 					break
 				case 'case':
 					return {
-						title: '图鸟案例',
+						title: '雪印案例',
 							imageUrl: '/static/images/share.jpg',
 					}
 					break
@@ -107,7 +107,7 @@
 					break
 				case 'information':
 					return {
-						title: '图鸟资讯',
+						title: '雪印资讯',
 							imageUrl: '/static/images/share.jpg',
 					}
 					break
@@ -129,7 +129,7 @@
 					break
 				case 'case':
 					return {
-						title: '图鸟案例',
+						title: '雪印案例',
 							imageUrl: '/static/images/share.jpg',
 					}
 					break
@@ -141,7 +141,7 @@
 					break
 				case 'information':
 					return {
-						title: '图鸟资讯',
+						title: '雪印资讯',
 							imageUrl: '/static/images/share.jpg',
 					}
 					break

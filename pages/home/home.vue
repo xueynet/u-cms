@@ -48,8 +48,7 @@
           <image class='' :src="item.image.prefix" mode='aspectFill'></image>
         </swiper-item>
       </swiper> -->
-			<swiper class="swiper" :indicator-dots="true" :autoplay="true" :interval="5000"
-				:duration="500">
+			<swiper class="swiper" :indicator-dots="true" :autoplay="true" :interval="5000" :duration="500">
 				<swiper-item>
 					<view class="radius-index">
 						<image class='' src="../../static/images/banner/banner1.jpg" mode='aspectFill'></image>
@@ -157,21 +156,49 @@
 				<view class="nav-name">app开发</view>
 				<text class='cuIcon-skinfill'></text>
 			</view>
-			<view  class="nav-li bg-index2" @click="navBusinessDetail">
+			<view class="nav-li bg-index2" @click="navBusinessDetail">
 				<view class="nav-title">雪印</view>
 				<view class="nav-name">网站开发</view>
 				<text class='cuIcon-skinfill'></text>
 			</view>
-			<view  class="nav-li bg-index3" @click="navBusinessDetail">
+			<view class="nav-li bg-index3" @click="navBusinessDetail">
 				<view class="nav-title">雪印</view>
 				<view class="nav-name">微信小程序</view>
 				<text class='cuIcon-skinfill'></text>
 			</view>
-			<view  class="nav-li bg-index4" @click="navBusinessDetail">
+			<view class="nav-li bg-index4" @click="navBusinessDetail">
 				<view class="nav-title">雪印</view>
 				<view class="nav-name">其他业务</view>
 				<text class='cuIcon-skinfill'></text>
 			</view>
+		</view>
+		<!-- 解决方案 -->
+		<view class="cu-bar bg-white margin-top-xl">
+			<view class='action'>
+				<text class='text-bold text-title text-xxl'>解决方案</text>
+			</view>
+		</view>
+		<view class="nav-list">
+			<navigator class="nav-item">
+				<image src="../../static/images/case/case_img0.png"></image>
+				<view>金融</view>
+			</navigator>
+			<navigator class="nav-item">
+				<image src="../../static/images/case/case_img1.png"></image>
+				<view>房地产</view>
+			</navigator>
+			<navigator class="nav-item">
+				<image src="../../static/images/case/case_img2.png"></image>
+				<view>政府</view>
+			</navigator>
+			<navigator class="nav-item">
+				<image src="../../static/images/case/case_img3.png"></image>
+				<view>餐饮</view>
+			</navigator>
+			<navigator class="nav-item">
+				<image src="../../static/images/case/case_img4.png"></image>
+				<view>教育</view>
+			</navigator>
 		</view>
 	</view>
 </template>
@@ -243,7 +270,6 @@
 
 			// 加载必要的数据
 			_loadData(callback) {
-
 				uni.showLoading({
 					title: '加载中',
 					mask: true,
@@ -340,6 +366,7 @@
 					getBusinessTitleData({
 						limit: 4
 					}).then((res) => {
+						console.log(res);
 						resolve(res.data);
 					}).catch(() => {
 						resolve([]);
@@ -418,9 +445,11 @@
 		overflow: hidden;
 		border-radius: 10rpx;
 	}
-	.radius-index image{
+
+	.radius-index image {
 		width: 100%;
 	}
+
 	.shadow-blur {
 		overflow: initial;
 	}
@@ -435,5 +464,20 @@
 		width: 108rpx;
 		height: 108rpx;
 		opacity: 0.1;
+	}
+	.nav-item{
+		padding: 16px;
+		border-radius: 6px;
+		width: 50%;
+		background-size: cover;
+		background-position: center;
+		position: relative;
+		z-index: 1;
+	}
+	.nav-item view{
+		text-align: center;
+	}
+	.nav-item image{
+		height: 153px;
 	}
 </style>

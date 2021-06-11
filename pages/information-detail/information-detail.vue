@@ -35,13 +35,11 @@
         </view>
       </view>
 
-
       <view class="cu-bar bg-white solid-bottom">
         <view class='action'>
           热门推荐
         </view>
       </view>
-
       <view class="cu-card article no-card padding-top">
         <view class="cu-item" v-for="(recomm_item, recomm_index) in informationData.recomm_data" :key="recomm_index">
           <view class="content" @click="navDetail(recomm_item.id)">
@@ -62,8 +60,6 @@
                   </view>
                 </view>
               </view>
-
-
             </view>
             <image class="product-border solid" style="margin-right:0rpx" :src="recomm_item.main_image.prefix" mode="aspectFill"></image>
           </view>
@@ -79,7 +75,6 @@
               <block v-for="(like_item, like_index) in informationData.contentLikeUser" :key="like_index">
                 <view class="cu-avatar round margin-xs shadow-sm" :style="'background-image:url(' + like_item.avatar_url + ');'"></view>
               </block>
-
             </view>
           </view>
           <view class='action' @click="likeTap">

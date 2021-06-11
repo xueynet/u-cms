@@ -68,6 +68,7 @@ function getTokenFromServer() {
                   success: (res) => {
                       uni.setStorageSync(TOKEN_NAME, res.data.token);   //将Token存放在本地
                       resolve(res.data.token);
+					  console.log(res.data.token);
                   }
               })
           }

@@ -42,6 +42,24 @@
             }
             
         }
+        ,{
+            "path" : "pages/coopera/coopera",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/coopera/coopera",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
   "subPackages": [{
     "root": "tn_components",

@@ -84,17 +84,17 @@
 				</button>
 			</view>
 			<view class="cu-item ">
-				<button class='content cu-btn' open-type="contact">
+				<button class='content cu-btn' open-type="contact" @click="navCoopera">
 					<image src='/static/images/fenxiang.png' class='png' mode='aspectFit'></image>
-					<text class='text-lg margin-sm'>商务合作</text>
+					<text class='text-lg margin-sm'>合作意向</text>
 				</button>
 			</view>
-			<view class="cu-item">
+			<!-- <view class="cu-item">
 				<button class='content cu-btn' open-type="feedback">
 					<image src='/static/images/fankui.png' class='png' mode='aspectFit'></image>
 					<text class='text-lg margin-sm'>问题反馈</text>
 				</button>
-			</view>
+			</view> -->
 			<view class="cu-item" @click="callPhoneNumber" data-number="13699700470">
 				<view class='content'>
 					<image src='/static/images/kefu.png' class='png' mode='aspectFit'></image>
@@ -158,6 +158,13 @@
 				uni.navigateTo({
 					url: '../about/about'
 				})
+			},
+			// 合作意向
+			navCoopera(){
+				uni.navigateTo({
+					url: '../coopera/coopera'
+				})
+				console.log(1111);
 			},
 			// 雪印公众号
 			navOfficial(){
